@@ -4,8 +4,8 @@ let
   uboot = pkgs.callPackage ./uboot {};
 in
 {
-  imports = [ 
-    <nixpkgs/nixos/modules/installer/cd-dvd/sd-image.nix>
+  imports = [
+    <nixpkgs/nixos/modules/installer/sd-card/sd-image.nix>
     ./configuration.nix
     ./cross-config.nix
   ];
