@@ -16,6 +16,7 @@
     systemd = super.systemd.override { withCryptsetup = false; };
     lvm2 = null;
     v4l-utils = super.v4l-utils.override { withGUI = false; };
+    ubootPinecube = super.callPackage ./uboot {};
   }) ];
 
   # disable more stuff to minimize cross-compilation
