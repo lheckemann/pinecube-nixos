@@ -12,7 +12,6 @@
     # Dependency minimization for cross-compiling
     cairo = super.cairo.override { glSupport = false; };
     gnutls = super.gnutls.override { guileBindings = false; };
-    polkit = super.polkit.override { withIntrospection = false; };
     systemd = super.systemd.override { withCryptsetup = false; };
     lvm2 = null;
     v4l-utils = super.v4l-utils.override { withGUI = false; };
